@@ -1,4 +1,4 @@
-Código R <img src="https://data.inpe.br/bdc/web/wp-content/uploads/2023/05/cubo-brazil-data-cube-bdc.png" align="right" height="400" width="590"/>
+Código R <img src="https://data.inpe.br/bdc/web/wp-content/uploads/2023/05/cubo-brazil-data-cube-bdc.png" align="right" height="200" width="290"/>
 
 ## RSTAC
 
