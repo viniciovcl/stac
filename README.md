@@ -1,7 +1,3 @@
-R code <img src="https://data.inpe.br/bdc/web/wp-content/uploads/2023/05/cubo-brazil-data-cube-bdc.png" align="right" height="250" width="340"/>
-
-
-
 
 ## RSTAC
 
@@ -13,9 +9,11 @@ Cria uma série temporal (spatio-temporal array) a partir dos assets retornarnad
 Exporta a série temporal para o formato NetCDF ou GeoTIFF.
 
 
+
 <p align="center" width="60%">
     <img width="60%" src="./animate.gif"> 
 </p>
+
 
 
 ### Referências:
