@@ -1,4 +1,6 @@
-## STAC
+Código R <img src="https://data.inpe.br/bdc/web/wp-content/uploads/2023/05/cubo-brazil-data-cube-bdc.png" align="right" height="400" width="590"/>
+
+## RSTAC
 
 <p align="justify">
 Pesquisa e recupera conjuntos de dados de observação da Terra usando a interface padronizada SpatioTemporal Asset Catalog (STAC).
@@ -7,29 +9,9 @@ Cria uma série temporal (spatio-temporal array) a partir dos assets retornarnad
 
 Exporta a série temporal para o formato NetCDF ou GeoTIFF.
 
-```
-  ____ _____  __   _____
- / ___|_   _|/ \  / ___|
- \___ \ | | / _ \| |
-  ___) || |/ ___ \ |___
- |____/ |_/_/   \_\____|
 
-            _       _            _
-           | |     | |          | |
-   __ _  __| | __ _| | ___ _   _| |__   ___  ___
-  / _` |/ _` |/ _` | |/ __| | | | '_ \ / _ \/ __|
- | (_| | (_| | (_| | | (__| |_| | |_) |  __/\__ \
-  \__, |\__,_|\__,_|_|\___|\__,_|_.__/ \___||___/
-   __/ |
-  |___/
-```
-
-
-
-
-
-<p align="center" width="100%">
-    <img width="100%" src="./animate.gif"> 
+<p align="center" width="60%">
+    <img width="60%" src="./animate.gif"> 
 </p>
 
 
