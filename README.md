@@ -1,10 +1,13 @@
-```
-Recupera conjuntos de dados de observação da Terra usando a Interface padronizada SpatioTemporal Asset Catalog (STAC).
+## STAC
+
+<p align="justify">
+Pesquisa e recupera conjuntos de dados de observação da Terra usando a interface padronizada SpatioTemporal Asset Catalog (STAC).
 
 Cria uma série temporal (spatio-temporal array) a partir dos assets retornarnados pela API STAC.
 
 Exporta a série temporal para o formato NetCDF ou GeoTIFF.
 
+```
   ____ _____  __   _____
  / ___|_   _|/ \  / ___|
  \___ \ | | / _ \| |
@@ -19,7 +22,6 @@ Exporta a série temporal para o formato NetCDF ou GeoTIFF.
   \__, |\__,_|\__,_|_|\___|\__,_|_.__/ \___||___/
    __/ |
   |___/
-
 ```
 
 
