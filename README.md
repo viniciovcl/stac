@@ -13,7 +13,7 @@ Exporta a série temporal para o formato NetCDF ou GeoTIFF.
 > str(time_serie)
 Classes 'fill_time_cube', 'cube', 'xptr' <externalptr> 
 
-A data cube proxy object - Reduce time: 1 Month
+A data cube proxy object - aggregation time: 1 Month
 
 Dimensions:
                low             high count pixel_size chunk_size
