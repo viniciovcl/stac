@@ -1,4 +1,4 @@
-![Título do Projeto](./rstac-magick-image.png)
+![](./rstac-magick-image.png)
 
 ## RSTAC
 
