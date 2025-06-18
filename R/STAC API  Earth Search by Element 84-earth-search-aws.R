@@ -47,6 +47,7 @@ library(rstac)
 library(httr)
 library(sf)
 library(dplyr)
+library(gdalcubes)
 
 # URL base da STAC API da MPC
 stac_obj <- stac("https://earth-search.aws.element84.com/v1")
@@ -86,7 +87,7 @@ bbox_wgs84
 
 
 
-library(rstac)
+
 s = stac("https://earth-search.aws.element84.com/v1")
 items = s |>
   stac_search(collections = "sentinel-2-l2a",
