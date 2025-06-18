@@ -1,4 +1,4 @@
-![](./rstac-magick-image.png)
+![](https://github.com/viniciovcl/magick-images/blob/master/rstac-banner.png?raw=true)
 
 ## RSTAC
 #### Script R
