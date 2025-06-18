@@ -10,6 +10,24 @@ Cria uma série temporal (spatio-temporal array) a partir dos assets retornarnad
 
 Exporta a série temporal para o formato NetCDF ou GeoTIFF.
 
+
+A data cube proxy object - Reduce time: 1 Month
+
+Dimensions:
+               low             high count pixel_size chunk_size
+t       2021-10-01       2022-04-30     7        P1M          1
+y 7699753.68441534 7704253.68441534    45        100         45
+x 415665.031861902 421965.031861902    63        100         63
+
+Bands:
+  name offset scale nodata unit
+1  B02      0     1    NaN     
+2  B03      0     1    NaN     
+3  B04      0     1    NaN     
+4  B08      0     1    NaN     
+5  B8A      0     1    NaN     
+6  SCL      0     1    NaN  
+
 ```
 
 <p align="center" width="60%">
