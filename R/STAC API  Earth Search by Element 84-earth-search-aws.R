@@ -26,7 +26,7 @@
 # A STAC API of public datasets on AWS
 # Colletcions Earth Search by Element 84 <earth-search-aws>
 
-# Collections
+
 
 # |ID_Colecao            |                     Titulo                      |Periodo_Aquisicao           |
 # |:---------------------|:-----------------------------------------------:|:---------------------------|
