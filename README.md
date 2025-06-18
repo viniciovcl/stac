@@ -1,15 +1,16 @@
 ![](./rstac-magick-image.png)
 
 ## RSTAC
-
-<p align="justify">
-Pesquisa e recupera conjuntos de dados de observação da Terra usando a interface padronizada SpatioTemporal Asset Catalog (STAC).
+#### Script R
+  ```
+Pesquisa e recupera conjuntos de dados de observação da Terra usando a interface padronizada
+ SpatioTemporal Asset Catalog (STAC).
 
 Cria uma série temporal (spatio-temporal array) a partir dos assets retornarnados pela API STAC.
 
 Exporta a série temporal para o formato NetCDF ou GeoTIFF.
 
-
+```
 
 <p align="center" width="60%">
     <img width="60%" src="./animate.gif"> 
