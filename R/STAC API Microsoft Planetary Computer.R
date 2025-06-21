@@ -156,7 +156,7 @@ aoi_polygon <- st_as_sfc(st_bbox(bb), crs = 4326)
 aoi_sf <- st_as_sf(aoi_polygon, crs = 4326)
 box <- st_bbox(aoi_sf)
 # mapview::mapview(aoi_sf)
-# aoi_sf |> dplyr::mutate(Area = st_area(st_geometry(aoi_sf$x))/10000)
+# aoi_sf |> dplyr::mutate(Area = as.numeric(st_area(st_geometry(aoi_sf$x)))/10000)
 
 
 # Search STAC  -----------------------------------------------------------------
@@ -198,9 +198,23 @@ items_df <- signed_stac_query %>%
   items_as_tibble()
 
 items_df %>% arrange(datetime) %>% select(datetime)%>% pull() %>% unique()
-
-
 glimpse(items_df)
+
+
+items_df %>% arrange(datetime) %>%
+  select(platform,
+         instruments,
+         `s2:product_type`,
+         datetime,
+         # `s2:processing_baseline`,
+         # `s2:reflectance_conversion_factor`,
+         `s2:datastrip_id`
+         ) |> slice(1:10) |>
+              kable(format = "markdown", align = c('l', 'l', 'l'))
+
+
+
+
 
 # Gdalcubes Colletion-----------------------------------------------------------
 
