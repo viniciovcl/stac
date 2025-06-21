@@ -6,6 +6,9 @@ library(purrr) #
 library(knitr)
 
 # 1. Conectar ao catálogo STAC
+
+stac_url <- "https://brazildatacube.dpi.inpe.br/stac/"
+stac_url <- "https://planetarycomputer.microsoft.com/api/stac/v1/"
 stac_url <- "https://earth-search.aws.element84.com/v1"
 stac_obj <- stac(stac_url)
 
@@ -47,7 +50,7 @@ collection_data <- map_dfr(all_collections$collections, function(col) {
 
       # Formata a hora de término
       if (is.null(end_time) || is.na(end_time) || as.character(end_time) == "" || as.character(end_time) == "..") {
-        end_time_formatted <- "Fim Indefinido"
+        end_time_formatted <- "atual"
       } else {
         # Remove a parte da hora se for uma string ISO completa, mantendo apenas a data
         end_time_formatted <- sub("T.*Z$", "", as.character(end_time))
@@ -66,19 +69,19 @@ collection_data <- map_dfr(all_collections$collections, function(col) {
 
 library(stringr)
 
-Algumas_coleções <- collection_data %>%
-  mutate(
-    num_caracteres_ID_Colecao = nchar(ID_Colecao),
-    num_caracteres_Titulo = stringr::str_length(Titulo) # Exemplo com str_length()
-  ) %>% filter( num_caracteres_Titulo < 31,
-                num_caracteres_ID_Colecao < 26
-                ) |> select(-c(num_caracteres_ID_Colecao,
-                               num_caracteres_Titulo))
+# Algumas_coleções <- collection_data %>%
+#   mutate(
+#     num_caracteres_ID_Colecao = nchar(ID_Colecao),
+#     num_caracteres_Titulo = stringr::str_length(Titulo) # Exemplo com str_length()
+#   ) %>% filter( num_caracteres_Titulo < 31,
+#                 num_caracteres_ID_Colecao < 31
+#                 ) |> select(-c(num_caracteres_ID_Colecao,
+#                                num_caracteres_Titulo))
 
 
 # Definindo os limites de comprimento desejados para cada coluna
-limite_id <- 30
-limite_titulo <- 30
+limite_id <- 60
+limite_titulo <- 60
 
 
 # Percorrendo as colunas e truncando as strings
@@ -126,8 +129,5 @@ cols <-   stac("https://planetarycomputer.microsoft.com/api/stac/v1/") %>%
   # stac("https://earthengine.openeo.org/v1.0/") %>%
     collections() %>%
      get_request()
-
-cols$collections
-
 
 
